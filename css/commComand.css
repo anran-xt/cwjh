@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-y: scroll;
+}
+.tbd {
+    width: 1214px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(48, 134, 198);
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header>.am-monospace {
+    color: white;
+    font-family: inherit;
+    font-size: 40px;
+    height: 100%;
+    font-weight: 300;
+    float: left;
+}
+
+.nav {
+    float: left;
+    position: relative;
+    top: 31px;
+}
+.nav .order{
+    background:white;
+    color:black;
+}
+.nav .order a{
+    color:#3086C6;
+}
+.nav li {
+    list-style: none;
+    width: 100px;
+    line-height:50px;
+    height: 50px;
+    text-align: center;
+    transform: skewX(-15deg);
+}
+
+.nav li a {
+    color: white;
+    text-align: center;
+}
+
+.nav>ul>li {
+    float: left;
+    margin-right: 15px;
+}
+
+.nav>ul>li:first-child,.nav>ul>li:nth-child(2),.nav>ul>li:nth-child(3) {
+    border-right: 1px solid white;
+}
+
+.subnav {
+    margin: 0;
+    padding-left: 0;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #dedede;
+    margin-top: 3px;
+    display: none;
+}
+
+.subnav li {
+    height: 50%;
+}
+
+.subnav li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subname li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subnav li a,
+.subname li a {
+    color: #333;
+}
+
+.order:hover .subnav {
+    display: block;
+}
+
+.subnav li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.tx {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    border: 1px solid white;
+    position: relative;
+    top: 20px;
+}
+
+.am-icon-user {
+    color: white;
+    font-size: 30px;
+}
+
+.name {
+    float: right;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: 13px;
+    right: 45px;
+}
+
+.subname li {
+    list-style: none;
+    height: 34px;
+    line-height: 40px;
+    width: 100px;
+}
+
+.subname {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #dedede;
+    margin-top: 5px;
+    display: none;
+    position: relative;
+    z-index: 999;
+}
+
+.subname li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.name1 {
+    margin-bottom: 0;
+}
+
+.name1 >li {
+    list-style: none;
+    width: 100px;
+    height:60px;
+}
+
+.name1>li>a {
+    color: white;
+}
+
+.name1>li:hover .subname {
+    display: block;
+}
+
+
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/*mine*/
+.tabContainer{
+    min-height:530px;
+    border:1px solid lightslategray;
+    margin-bottom:20px;
+
+}
+.tabContainer .cTable{
+    width:100%;
+    border:1px solid lightslategray;
+    margin:20px;
+}
+.tabContainer .cTable td{
+    padding:2px 5px;
+}
+.tabContainer .cTable thead{
+    background:lightslategray;
+}
+.tabContainer .cTable th{
+    height:30px;
+    padding:5px;
+    font-size:16px;
+    font-weight:normal;
+    font-family:"宋体";
+}
+.tabContainer .cTable tbody tr td{
+    height:30px;
+}
+.tabContainer .left{
+    width:70%;
+    float:left;
+    left:20px;
+    /*margin-left:20px;*/
+}
+.pageTurn{
+    width:100%;
+    margin:20px;
+}
+.pageTurn img{
+    width:16px;
+}
+.pageTurn img:hover {
+    cursor: pointer;
+}
+.pageTurn .turn{
+    display: inline-block;
+}
+.pageTurn .detail{
+    display: inline-block;
+    float: right;
+}
+.pageTurn .detail span{
+    margin:0 5px;
+}
+.pageTurn .detail input{
+    width:70px;
+    border:1px solid gray;
+    border-radius: 3px;
+    margin:-2px 3px 0 3px;
+}
+
+/*//right*/
+.tabContainer .right{
+    float:left;
+    margin-top:70px;
+    margin-left:55px;
+}
+.tabContainer .right button{
+    display: block;
+    margin-top:50px;
+    background:#3086c0;
+    border:none;
+    width:90px;
+    height:40px;
+    border-radius:7px;
+    color:white;
+    letter-spacing: 3px;
+}
+
+/*add*/
+.tabContainer .add{
+    /*border:1px solid black;*/
+    margin:30px;
+    background:#E9F9FF;
+    padding:15px;
+    border-radius: 25px;
+
+
+}
+.tabContainer .add table{
+    width:360px;
+    margin:auto;
+}
+.tabContainer .add tr td:first-child{
+    text-align: right;
+}
+.tabContainer .add input{
+    height:35px;
+    margin-left:8px;
+    padding-left:5px;
+    width:200px;
+}
+.tabContainer .add tr{
+    display: block;
+    margin:10px;
+}
+.tabContainer .add button{
+    display: block;
+    margin-top:20px;
+    background:#3086c0;
+    border:none;
+    width:80px;
+    height:35px;
+    border-radius:7px;
+    color:white;
+    letter-spacing: 3px;
+    display: block;
+    margin:auto;
+    /*margin-bottom:10px;*/
+}
+
+/*修改密码*/
+.cover {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.cover .updateKey{
+    width:450px;
+    height:300px;
+    position:absolute;
+    left:50%;
+    margin-left:-225px;
+    top:50%;
+    margin-top:-225px;
+    background:lightblue;
+    text-align: center;
+    border-radius:5px;
+    display: none;
+}
+.cover .updateKey p label{
+    font-weight:normal;
+}
+.cover .updateKey input{
+    height:32px;
+    padding-left:5px;
+}
+.cover .updateKey p:nth-child(4){
+    position:relative;
+    left:-8px;
+}
+.cover .updateKey button{
+    color: #FFF;
+    height: 32px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background: #3086C6;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="css/commComand.css">
+    <!--        <link rel="shortcut icon" type="image/png" href="img/xt.png">-->
+    <title>创味江湖</title>
+
+</head>
+
+<body>
+<div class="tbd">
+    <div class="header">
+        <span class="am-monospace">创味江湖</span>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">首页</a></li>
+                <li><a href='order-of-goods.html'>订单管理</a></li>
+                <li class="order"><a href='javascript:;'>商品管理</a></li>
+                <li><a href='dsCommand.html'>用户管理</a></li>
+            </ul>
+        </div>
+
+        <div class="tx">
+            <span class="am-icon-user"></span>
+        </div>
+        <div class="name">
+            <ul class="name1">
+                <li><a href="#">用户名</a>
+                    <ul class="subname">
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="index.html">退出登录</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="tabContainer">
+        <div class="left">
+            <table class="cTable">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>商品编码</th>
+                    <th>商品名称</th>
+                    <th>商品规格</th>
+                    <th>商品价格</th>
+                    <th>单位</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                    <!--<td><input type="checkbox"></td>-->
+                    <!--<td>010602</td>-->
+                    <!--<td>鸭锁骨</td>-->
+                    <!--<td>微辣</td>-->
+                    <!--<td>￥19.00</td>-->
+                    <!--<td>包</td>-->
+                <!--</tr>-->
+
+                </tbody>
+            </table>
+            <div class="pageTurn">
+                <div class="turn">
+                    <span><img src="img/最前.png" alt=""></span>
+                    <span><img src="img/上一个.png" alt=""></span>
+                    <span class="nowPage">1</span>
+                    <span><img src="img/下一个.png" alt=""></span>
+                    <span><img src="img/最后.png" alt=""></span>
+                </div>
+                <div class="detail">
+                    <span>共10条</span>
+                    <span>2页</span>
+                    <span>每页<input type="number" value="10" min="1">条</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <button>修改</button>
+            <button>删除</button>
+        </div>
+        <div class="clear" style="clear:both"></div>
+        <div class="add">
+            <table>
+                <tr>
+                    <td>商品编码：</td>
+                    <td><input type="text" placeholder="商品编号必须唯一！"></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td>商品名称：</td>
+                    <td><input type="text" placeholder="商品名称不能为空！"></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td>商品规格：</td>
+                    <td><input type="text" placeholder="商品规格不能为空！"></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td>商品价格：</td>
+                    <td><input type="text" placeholder="商品价格不能为空！"></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td>商品单位：</td>
+                    <td><input type="text" placeholder="商品单位不能为空！"></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+            </table>
+            <button>添加</button>
+            <span style="display: none" class="Index">1</span>
+        </div>
+        <div class="clear" style="clear:both;"></div>
+    </div>
+</div>
+<!--商品列表与修改密码-->
+<div class="cover">
+    <!--修改密码-->
+    <div class="updateKey">
+        <h2>修改密码</h2>
+        <p><label>原密码：</label><input type="password" class="ymm"></p>
+        <p><label>新密码：</label><input type="password" class="xmm"></p>
+        <p><label>确认密码：</label><input type="password" class="qrmm"></p>
+        <button class="qr">确认</button>
+        <button class="qx">取消</button>
+    </div>
+
+</div>
+
+</body>
+<script src="js/00-init.js"></script>
+<script src="js/loadCommList.js"></script>
+<script src="js/userCz.js"></script>
+</html>

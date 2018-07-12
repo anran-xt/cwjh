@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.tbd {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(48, 134, 198);
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header>.am-monospace {
+    color: white;
+    font-family: inherit;
+    font-size: 40px;
+    height: 100%;
+    font-weight: 300;
+    float: left;
+}
+
+.nav {
+    float: left;
+    position: relative;
+    top: 30px;
+}
+
+.nav li {
+    list-style: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+.nav li a {
+    color: white;
+    text-align: center;
+}
+
+.nav>ul>li {
+    float: left;
+    margin-right: 15px;
+}
+
+.nav>ul>li:first-child {
+    border-right: 1px solid white;
+}
+
+.subnav {
+    margin: 0;
+    padding-left: 0;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #dedede;
+    margin-top: 3px;
+    display: none;
+}
+
+.subnav li {
+    height: 50%;
+}
+
+.subnav li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subname li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subnav li a,
+.subname li a {
+    color: #333;
+}
+
+.order:hover .subnav {
+    display: block;
+}
+
+.subnav li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.tx {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    border: 1px solid white;
+    position: relative;
+    top: 20px;
+}
+
+.am-icon-user {
+    color: white;
+    font-size: 30px;
+}
+
+.name {
+    float: right;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: 33px;
+    right: 45px;
+}
+
+.subname li {
+    list-style: none;
+    height: 34px;
+    line-height: 40px;
+    width: 100px;
+}
+
+.subname {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #dedede;
+    margin-top: 5px;
+    display: none;
+    position: relative;
+    z-index: 999;
+}
+
+.subname li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.name1 {
+    margin-bottom: 0;
+}
+
+.name1 li {
+    list-style: none;
+    width: 100px;
+}
+
+.name1>li>a {
+    color: white;
+}
+
+.name1>li:hover .subname {
+    display: block;
+}
+
+/*main*/
+.main{
+    border: 1px solid #dedede;
+    padding-bottom: 12%;
+}
+.change{
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: 6px solid rgb(48, 134, 198);
+    border-bottom: 1px solid #dedede;
+}
+
+.tmain table{
+    margin:auto;
+    margin-top: 5%;
+}
+.tmain table i{
+    color: red;
+}
+.tmain table .ts{
+    color:red;
+    padding-left: 10px;
+}
+.tmain table tr td:first-child{
+    text-align: right;
+}
+.tmain table td input{
+    width: 250px;
+}
+.tmain table tr{
+    height: 60px;
+}
+.tmain table tr:last-child{
+    height: 100px;
+/*    text-align: center;*/
+   
+}
+.tmain table tr:last-child td{
+    text-align: left;
+    padding-left: 15px;
+}
+.tmain table tr:last-child td input{
+    width: 200px;
+}

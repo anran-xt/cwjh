@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="css/order-of-goods.css">
+    <!--    <link rel="shortcut icon" type="image/png" href="img/xt.png">-->
+    <title>创味江湖</title>
+
+</head>
+
+<body>
+<div class="tbd">
+    <div class="header">
+        <span class="am-monospace">创味江湖</span>
+        <div class="nav">
+            <ul>
+                <li class="order"><a href=#>订单管理</a></li>
+            </ul>
+        </div>
+
+        <div class="tx">
+            <span class="am-icon-user"></span>
+        </div>
+        <div class="name">
+            <ul class="name1">
+                <li><a href="#">用户名</a>
+                    <ul class="subname">
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="index.html">退出登录</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="main am-tabs" data-am-tabs="{noSwipe: 1}" id="doc-tab-demo-1">
+        <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active"><a href="javascript: void(0)">快速查询</a></li>
+            <li><a href="javascript: void(0)">高级查询</a></li>
+        </ul>
+
+        <div class="am-tabs-bd">
+            <div class="am-tab-panel am-active">
+                <!--                    快速查询-->
+                <table class="kscx">
+                    <tr class="am-form-group">
+                        <td><label>时间：</label></td>
+                        <td><label class="am-radio-inline am-secondary">
+                            <input type="radio" name="radio1" value="" data-am-ucheck> 当日订单
+                        </label></td>
+                        <td><label class="am-radio-inline am-secondary">
+                            <input type="radio" name="radio1" value="" data-am-ucheck> 3日内订单
+                        </label></td>
+                        <td><label class="am-radio-inline am-secondary">
+                            <input type="radio" name="radio1" value="" data-am-ucheck> 7日内订单
+                        </label></td>
+                        <td><label class="am-radio-inline am-secondary">
+                            <input type="radio" name="radio1" value="" data-am-ucheck> 30日内订单
+                        </label></td>
+                        <td><label class="am-radio-inline am-secondary">
+                            <input type="radio" name="radio1" value="" data-am-ucheck> 30日外订单
+                        </label></td>
+                    </tr>
+                    <tr class="am-form-group">
+                        <td><label>状态：</label></td>
+                        <td><label class="am-radio-inline am-success">
+                            <input type="radio" name="radio2" value="" data-am-ucheck> 待审核
+                        </label></td>
+                        <td><label class="am-radio-inline am-success">
+                            <input type="radio" name="radio2" value="" data-am-ucheck> 待发货
+                        </label></td>
+                        <td><label class="am-radio-inline am-success">
+                            <input type="radio" name="radio2" value="" data-am-ucheck> 已发货
+                        </label></td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+            <!--高级查询-->
+            <div class="am-tab-panel">
+                <table class="gjcx">
+                    <tr>
+                        <td><label>下单时间：</label></td>
+                        <td class="ttime">
+                            <input type="text" class="am-form-field" placeholder="开始时间" data-am-datepicker readonly
+                                   required/>
+                        </td>
+                        <td class="to">至</td>
+                        <td class="end"><input type="text" class="am-form-field" placeholder="结束时间" data-am-datepicker
+                                               readonly required/>
+                        </td>
+                        <td class="tit"><label>店铺：</label></td>
+                        <td>
+                            <select>
+                                <option value="0">---请选择---</option>
+                                <option value="1">鲜诱惑食品微信公众号( 线下 )</option>
+                                <option value="2">鲜诱惑食品( 线下 )</option>
+                                <option value="3">鲜诱惑食品旗舰店( 微店 )</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="tit"><label>发货时间：</label></td>
+                        <td><input type="text" class="am-form-field" placeholder="开始时间" data-am-datepicker readonly
+                                   required/></td>
+                        <td class="to">至</td>
+                        <td class="end"><input type="text" class="am-form-field" placeholder="结束时间" data-am-datepicker
+                                               readonly required/></td>
+
+
+                        <td class="tit"><label>单号：</label></td>
+                        <td><input type="text" placeholder="原始单号"></td>
+                    </tr>
+                </table>
+                <div class="btn1">
+                    <input type="button" onclick="" value="查询" class="am-btn am-btn-primary am-round">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="btn2">
+            <input type="button" onclick="" value="刷新订单" class="am-btn am-btn-warning am-btn-sm shuaxin">
+        <input type="button" onclick="" value="新建" class="am-btn am-btn-warning  am-btn-sm xinjian"
+               data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 900, height: 600}">
+    </div>
+
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd"><span class="cjdd">创建订单</span>
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+            </div>
+            <div class="am-modal-bd" id="orderFace">
+                <ul>
+                    <li><label>所在店铺：</label><i class="xx">*</i>
+                        <select data-am-selected>
+                            <option value="1">鲜诱惑食品微信公众号( 线下 )</option>
+                            <option value="2">鲜诱惑食品( 线下 )</option>
+                            <option value="3">鲜诱惑食品旗舰店( 微店 )</option>
+                        </select>
+                    </li>
+                    <li><label>实付金额：</label><input type="number" value="" class="ipt input1 payMoney"></li>
+                    <li><label>运费：</label><input type="number" value="" class="ipt expreMoney"></li>
+
+                </ul>
+                <div class="sjif">
+                    <span>收件人信息</span>
+                    <ul class="sjr">
+                        <li><label class="lab1">姓名：</label><input type="text" id="uname0" class="ipt" maxlength="6">
+                        </li>
+                        <li><label class="lab2">联系方式：</label><input type="tel" id='phone0' class="ipt tel"
+                                                                    maxlength="11" pattern="[0-9]"></li>
+                    </ul>
+                    <ul class="adnt">
+                        <li><label class="lab3">收件地址：</label><textarea id='address0' class="ipt"></textarea></li>
+                        <li><label class="lab4">备注：</label><textarea id='note0'></textarea></li>
+                    </ul>
+                </div>
+                <div class="addlist">
+                    <table class="am-table am-table-striped">
+                        <thead>
+                        <tr>
+                            <th>商品编码</th>
+                            <th>商品名称</th>
+                            <th>商品规格</th>
+                            <th>商品价格</th>
+                            <th>数量</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody class="mb">
+                        <!--<tr>-->
+                        </tbody>
+                    </table>
+                                            <!--<span class="am-icon-plus" ></span>-->
+
+                </div>
+
+            </div>
+            <button type="button" class="am-icon-plus newComm"></button>
+            <div class="commButon">
+                <button class="baocun">保存</button>
+                <button class="quxiao">取消</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-2">
+            <button type="button" class="am-icon-plus newComm"></button>
+            <span class="ocode" style="display: none"></span>
+    </div>
+
+    <div class="list">
+        <table class="outTab">
+            <thead>
+            <tr>
+                <td>编号</td>
+                <td>原始单号</td>
+                <td>订单状态</td>
+                <td>下单时间</td>
+                <td>收件人</td>
+                <td>收件地址</td>
+                <td>电话号码</td>
+                <td>备注或留言</td>
+                <td><span>展开<i class="zhankai"></i></span></td>
+            </tr>
+            </thead>
+            <tbody id="orderBody">
+            <!--<tr class="mainTr">-->
+            <!--<td></td>-->
+            <!--<td></td>-->
+            <!--<td class="orderTime"></td>-->
+            <!--<td class="sendTime"><div></div></td>-->
+            <!--<td></td>-->
+            <!--<td><div></div></td>-->
+            <!--<td></td>-->
+            <!--<td><div></div></td>-->
+            <!--<td><span class=""></span></td>-->
+            <!--</tr>-->
+            <!--<tr class="sideTr">-->
+            <!--<td colspan="9">-->
+            <!--<table class="innerTab">-->
+            <!--</table>-->
+            <!--</td>-->
+            <!--</tr>-->
+            </tbody>
+        </table>
+        <div class="pageTurn">
+            <div class="turn">
+                <span><img src="img/最前.png" alt=""></span>
+                <span><img src="img/上一个.png" alt=""></span>
+                <span class="nowPage">1</span>
+                <span><img src="img/下一个.png" alt=""></span>
+                <span><img src="img/最后.png" alt=""></span>
+            </div>
+            <div class="detail">
+                <span>共10条</span>
+                <span>2页</span>
+                <span>每页<input type="number" value="500" min="1">条</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+    <a href="#top" title="">
+        <i class="am-gotop-icon am-icon-hand-o-up"></i>
+    </a>
+</div>
+<div class="clear"></div>
+<!--商品列表-->
+<!--商品列表与修改密码-->
+<div class="cover">
+    <!--商品列表-->
+    <div class="commList">
+        <div class="cHead">
+            <span>添加商品</span>
+            <img src="img/叉.png" alt="" class="closeComm">
+        </div>
+        <div class="cSearch"><span>关键字： <input type="text"></span></label></div>
+
+        <div class="tabContainer">
+            <table class="cTable">
+                <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>商品编码</th>
+                    <th>商品名称</th>
+                    <th>商品规格</th>
+                    <th>商品价格</th>
+                    <th>单位</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>-->
+                <!--<td><input type="checkbox"></td>-->
+                <!--<td>010602</td>-->
+                <!--<td>鸭锁骨</td>-->
+                <!--<td>微辣</td>-->
+                <!--<td>￥19.00</td>-->
+                <!--<td>包</td>-->
+                <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                <!--</tbody>-->
+            </table>
+        </div>
+
+        <div class="pageTurn">
+            <div class="turn">
+                <span><img src="img/最前.png" alt=""></span>
+                <span><img src="img/上一个.png" alt=""></span>
+                <span>1</span>
+                <span><img src="img/下一个.png" alt=""></span>
+                <span><img src="img/最后.png" alt=""></span>
+            </div>
+            <div class="detail">
+                <span>共10条</span>
+                <span>2页</span>
+                <span>每页<input type="number" value="10" min="1" >条</span>
+            </div>
+        </div>
+        <div class="addCom">
+            <button>添加商品</button>
+        </div>
+
+    </div>
+    <!--修改密码-->
+    <div class="updateKey">
+        <h2>修改密码</h2>
+        <p><label>原密码：</label><input type="password" class="ymm"></p>
+        <p><label>新密码：</label><input type="password" class="xmm"></p>
+        <p><label>确认密码：</label><input type="password" class="qrmm"></p>
+        <button class="qr">确认</button>
+        <button class="qx">取消</button>
+    </div>
+    <!--查看订单详情-->
+    <div class="ddxq">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd"><span class="cjdd">订单详情</span>
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+            </div>
+            <div class="detail">
+                <table>
+                    <tBody  class="detailBody">
+                    <tr>
+                        <td>原始单号：</td>
+                        <td class="Ocode">T179100397769</td>
+                        <td>订单状态：</td>
+                        <td class="oStatus">已发货</td>
+                    </tr>
+                    <tr>
+                        <td>下单时间：</td>
+                        <td class="orderTime">2017/09/10</td>
+                        <td>发货时间：</td>
+                        <td class="orderSendTime"></td>
+                    </tr>
+                    <tr>
+                        <td>快递单号：</td>
+                        <td class="exprNum">3101352047318</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>实付金额：</td>
+                        <td class="payMon">￥2500.00</td>
+                        <td>运费：</td>
+                        <td class="exprMon">￥20.00</td>
+                    </tr>
+                    <tr>
+                        <td>收件人：</td>
+                        <td class="oName">杨晓明</td>
+                        <td>手机/电话：</td>
+                        <td class="oTel">18628966636</td>
+                    </tr>
+                    <tr>
+                        <td>收件地址：</td>
+                        <td colspan="3" class="oAddress">四川省成都市双流县腾飞六路24号</td>
+                    </tr>
+                    <tr>
+                        <td>留言/备注：</td>
+                        <td colspan="3" class="notes">光辐射都好几个等级和散热问题个人分析和他 和公司电话他说
+                            光辐射都好几个等级和散热问题个人分析和他 和公司电话他说
+                        </td>
+                    </tr>
+                    </tBody>
+
+                </table>
+            </div>
+            <div class="addlist">
+                <table class="am-table am-table-striped">
+                    <thead>
+                    <tr>
+                        <th>商品编码</th>
+                        <th>商品名称</th>
+                        <th>商品规格</th>
+                        <th>商品价格</th>
+                        <th>数量</th>
+                    </tr>
+                    </thead>
+                    <tbody class="mb">
+                    <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+
+                    <!--</tr>-->
+                    <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+
+                    <!--</tr>-->
+                    <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--</tr>-->
+
+                    <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                    <!--<td><input type="number" class="commPrice"></td>-->
+                    <!--<td><input type="number" class="commNum"></td>-->
+                    <!--<td><img src="" alt="" class="deleComm"></td>-->
+                    <!--</tr>-->
+
+
+                    </tbody>
+                </table>
+                <!--                        <span class="am-icon-plus" ></span>-->
+
+            </div>
+
+
+            <!--<button type="button" class="am-icon-plus newComm"></button>-->
+            <!--<div class="commButon">-->
+            <!--<button class="xiugai">修改</button>-->
+            <!--<button class="quxiao">取消</button>-->
+            <!--</div>-->
+            <!--<span class="ocode" style="display: none"></span>-->
+
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/00-init.js"></script>
+<script src="js/loadOrder.js"></script>
+<script src="js/addComm.js"></script>
+<script src="js/addOrder.js"></script>
+<script src="js/commList.js"></script>
+<script src="js/userCz.js"></script>
+<script src="js/gjcx.js"></script>
+</html>

@@ -1,0 +1,1084 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.tbd {
+    width: 1214px;
+    margin: 0 auto;
+
+}
+body{
+    overflow-y:scroll;
+}
+
+.header {
+    background-color: rgb(48, 134, 198);
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header > .am-monospace {
+    color: white;
+    font-family: inherit;
+    font-size: 40px;
+    height: 100%;
+    font-weight: 300;
+    float: left;
+}
+
+.nav {
+    float: left;
+    position: relative;
+    top: 31px;
+}
+.nav .order{
+    background-color: white;
+}
+.nav .order a{
+    color:#3086C6;
+}
+
+.nav li {
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+    transform: skewX(-15deg);
+}
+
+.nav li a {
+    color: white;
+    text-align: center;
+}
+
+.nav > ul > li {
+    float: left;
+    margin-right: 15px;
+}
+
+.nav > ul > li:first-child, .nav > ul > li:nth-child(2),.nav > ul > li:nth-child(3) {
+    border-right: 1px solid white;
+}
+
+.subnav {
+    margin: 0;
+    padding-left: 0;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #dedede;
+    margin-top: 3px;
+    display: none;
+}
+
+.subnav li {
+    height: 50%;
+}
+
+.subnav li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subname li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subnav li a,
+.subname li a {
+    color: #333;
+}
+
+.order:hover .subnav {
+    display: block;
+}
+
+.subnav li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.tx {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    border: 1px solid white;
+    position: relative;
+    top: 20px;
+}
+
+.am-icon-user {
+    color: white;
+    font-size: 30px;
+}
+
+.name {
+    float: right;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: 13px;
+    right: 45px;
+}
+.name1{
+    margin:0;
+}
+.subname li {
+    list-style: none;
+    height: 34px;
+    line-height: 40px;
+    width: 100px;
+}
+
+.subname {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #dedede;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.subname li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.name1 >li {
+    list-style: none;
+    width: 100px;
+    height:63px;
+}
+
+.name1 > li > a {
+    color: white;
+}
+
+.name1 > li:hover .subname {
+    display: block;
+}
+
+.kscx td {
+    width: 150px;
+    text-align: left;
+}
+
+.kscx tr td:first-child {
+    text-align: center;
+}
+
+.gjcx td {
+    /*    width: 190px;*/
+    text-align: left;
+}
+
+.gjcx tr td:first-child {
+    text-align: right;
+    width: 100px;
+}
+
+.gjcx .tit {
+    width: 200px;
+    text-align: right;
+}
+
+.gjcx2 {
+    margin-top: 20px;
+}
+
+.gjcx2 td {
+    width: 120px;
+}
+
+.gjcx2 tr td:first-child {
+    text-align: center;
+}
+
+.btn1 {
+    float: right;
+    position: relative;
+    bottom: 10px;
+}
+
+.btn2 {
+    margin: 5px 0;
+}
+
+.yifahuo,.shanchu ,.shenhe,.kddh{
+    margin:.5em .5em;
+    float: right;
+}
+
+.list {
+    text-align: center;
+    margin: 10px 0 50px 0;
+}
+
+.list th {
+    text-align: center;
+}
+
+.list ul {
+    margin-bottom: 5px;
+}
+
+.list li {
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+}
+
+.listhide {
+    padding-left: 10px;
+}
+
+.sublist {
+    margin-top: 2px;
+    height: 40px;
+    padding-left: 15%;
+}
+
+.sublist li {
+    float: left;
+    border: none;
+    margin: 0;
+}
+
+.listhide li {
+    border-bottom: 1px solid #dedede;
+}
+
+.listhide > li:last-child {
+    float: right;
+    padding-right: 40px;
+    border: none;
+}
+
+.listlast th {
+    height: 50px;
+}
+
+.cjdd {
+    float: left;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+
+.am-modal-hd {
+    background-color: rgb(48, 134, 198);
+    height: 40px;
+    line-height: 40px;
+    padding-top: 0;
+}
+
+.am-close {
+    color: black;
+}
+
+.xx {
+    color: red;
+}
+
+.am-modal-dialog {
+    background-color: white;
+    /*overflow: scroll;*/
+    /*display: block;*/
+    width:900px;
+    height:600px;
+    box-sizing: border-box;
+}
+
+.am-modal-bd li {
+    list-style: none;
+    float: left;
+}
+
+.am-modal-bd ul li {
+    margin-right: 70px;
+    /*    width: 35%;*/
+}
+
+.am-modal-bd input {
+    /*    width: 100px;*/
+}
+
+.adr {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 200px;
+    text-align: center;
+    /*height: 100%;*/
+
+}
+
+.sublist li {
+    width: 150px;
+    text-align: center;
+}
+
+.end {
+    text-align: left;
+}
+
+.ipt {
+    padding: 8px;
+    height: 37px;
+    width: 90px;
+}
+
+.am-modal-bd input, textarea {
+    border: 1px solid #C5C5C5;
+}
+
+.tel {
+    width: 170px;
+
+}
+
+#uname0, #uname1 {
+    width: 160px;
+}
+
+.sjr, .sjif {
+    float: left;
+    text-align: left;
+
+}
+
+.sjif {
+    border: 1px solid #686868;
+    margin: 20px 20px 0px 10px;
+}
+
+.sjif span {
+    /*    display: block;*/
+    background-color: white;
+    position: relative;
+    top: -15px;
+    padding-left: 15px;
+    right: 570px;
+
+}
+
+.adnt li {
+    margin-bottom: 10px;
+}
+
+.addlist {
+    clear: both;
+    height: 159px;
+    /*overflow: scroll;*/
+}
+
+.addlist table {
+    color: black;
+    font-size: 14px;
+}
+
+.addlist table thead {
+    /*position: fixed;*/
+}
+
+.addlist table thead tr {
+    /*width:846px;*/
+}
+
+.addlist table thead tr th {
+    width: 141px;
+    height: 30px;
+}
+
+.addlist table thead {
+    display: block;
+    /*width:90%;*/
+
+}
+
+.addlist table tbody {
+    /*position:relative;*/
+    /*top: 30px;*/
+    display: block;
+    /*width:100%;*/
+    height: 150px;
+    overflow: auto;
+    /*width:90%;*/
+}
+
+/*.addlist table tbody tr{*/
+/*width: 100%;*/
+/*display: block;*/
+/*height: 30px;*/
+/*line-height: 30px;*/
+/*}*/
+.addlist table tbody tr td {
+    width: 140px;
+    height: 30px;
+    display: inline-block;
+    /*float:left;*/
+}
+
+.addlist table th, .addlist table td {
+    padding: 0px;
+}
+
+.am-table > tbody > tr > td {
+    padding: 0;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.addlist table tr {
+    height: 30px;
+}
+
+.addlist table input {
+    width: 100px;
+}
+
+.addlist table .commPrice {
+    text-align: right;
+}
+
+.addlist table .commNum {
+    text-align: center;
+}
+
+.addlist table .deleComm {
+    width: 25px;
+}
+
+.addlist table .deleComm:hover {
+    cursor: pointer;
+}
+
+.addlist th {
+    border-left: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    text-align: center;
+}
+
+.addlist th:last-child {
+    border-right: 1px solid #dedede;
+}
+
+.addlist th {
+    font-weight: normal;
+}
+
+.addlist td {
+    height: 42px;
+    padding: 8.4px;
+}
+
+.addlist {
+    height: 168px;
+    /*    overflow-y: scroll;*/
+}
+
+.xzk {
+    font-size: 10px;
+    display: block;
+    /*    height: 50px;*/
+
+}
+
+#allx {
+    cursor: pointer;
+}
+
+#allx:hover {
+    color: rgb(48, 134, 198);
+}
+
+.stime {
+    display: block;
+}
+
+.ps {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100px;
+    text-align: center;
+}
+
+/*mine*/
+.outTab {
+    width: 100%;
+}
+
+.outTab thead td:first-child {
+    width: 60px;
+}
+
+.outTab thead td:nth-child(2) {
+    width: 120px;
+}
+
+.outTab thead td:nth-child(3) {
+    width: 170px;
+}
+
+.outTab thead td:nth-child(4) {
+    width: 150px;
+}
+
+.outTab thead td:nth-child(5) {
+    width: 90px;
+}
+
+.outTab thead td:nth-child(6) {
+    width: 240px;
+}
+
+.outTab thead td:nth-child(7) {
+    width: 160px;
+}
+
+.outTab thead td:nth-child(8) {
+    width: 160px;
+}
+
+.outTab thead td:nth-child(9) {
+    width: 63px;
+}
+
+.outTab thead td:nth-child(7), .outTab thead td:nth-child(8) {
+    width: 160px;
+}
+
+.outTab .orig {
+    font-size: 12px;
+}
+
+.outTab tbody {
+    font-size: 14px;
+}
+#orderBody a{
+    color:black;
+    text-decoration: underline;
+}
+#orderBody a:hover{
+    color:red;
+    cursor: pointer;
+}
+
+.outTab tr {
+    position: relative;
+}
+
+.outTab .sideTr table {
+    display: none;
+}
+
+.outTab, .innerTab {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.outTab tbody > tr {
+    margin: 10px 0;
+}
+
+.outTab .zhankai {
+    height: 0px;
+    width: 0px;
+    border-top: 7px solid gray;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    marrgin-top: 20px;
+    /*position:absolute;*/
+    /*float: right;*/
+}
+
+.outTab .zhankai:hover {
+    cursor: pointer;
+}
+
+.outTab .mainTr {
+    position: relative;
+    max-height: 42px;
+}
+.outTab .mainTr td:nth-child(5),.outTab .mainTr td:nth-child(7){
+    padding: 0;
+}
+.outTab .mainTr td:first-child {
+    position: relative;
+}
+
+.outTab .mainTr td input {
+    position: absolute;
+    left: 5px;
+}
+.outTab thead{
+    background-color: #C9E1F3;
+    height:45px;
+}
+.outTab thead td {
+    padding: 5px;
+    height:45px;
+}
+
+.outTab .innerTab td {
+    padding: 0 40px;
+}
+
+.outTab .mainTr td div {
+    height: 44px;
+    overflow: hidden;
+    margin: auto;
+}
+.outTab .mainTr td .orig,.outTab .mainTr .oTime div{
+    height:auto;
+}
+
+.outTab .oTime {
+    font-size: 14px;
+    color: gray;
+}
+
+.sideTr .innerTab {
+    text-align: left;
+}
+
+.outTab .totalMon {
+    text-align: right;
+}
+
+/*创建订单*/
+#orderFace input, #orderFace2 input {
+    height: 30px;
+    padding: 0;
+}
+
+#orderFace #address0, #orderFace2 #address1 {
+    width: 600px;
+    height: 50px;
+}
+
+#orderFace #note0, #orderFace2 #note1 {
+    width: 600px;
+    height: 80px;
+}
+
+#orderFace label, #orderFace2 label {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.sjif input {
+    padding: 0;
+    height: 30px;
+}
+
+.sjif .lab1, .sjif .lab4 {
+    margin-left: 50px;
+}
+
+.sjif .lab3 {
+    margin-left: 20px;
+}
+
+.sjif textarea {
+    padding: 0;
+}
+
+.input1 {
+    width: 110px;
+}
+
+#orderFace2 select{
+    width:200px;
+    height:30px;
+}
+#orderFace2 select option{
+    padding:5px 0;
+}
+/*button*/
+.am-icon-plus {
+    color: rgb(48, 134, 198);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    top: 0px;
+    float: left;
+    margin: 10px 0 0 40px;
+}
+
+.am-modal-dialog .commButon {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.am-modal-dialog .commButon button {
+    color: #FFF;
+    height: 32px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background: #22618E;
+}
+
+/*边框颜色*/
+
+/*清除浮动*/
+.clear {
+    clear: both;
+}
+
+.am-dimmer {
+    z-index: 777;
+}
+
+.am-modal {
+    display: none;
+    z-index: 888;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*商品列表*/
+.cover {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.commList {
+    position: absolute;
+    width: 920px;
+    height: 550px;
+    background-color: #FFF;
+    margin: auto;
+    /*position: relative;*/
+    border-radius: 3px;
+    box-shadow: 0px 0px 12px gray;
+    display: none;
+    top: 50%;
+    left: 50%;
+    margin-left: -460px;
+    margin-top: -320px;
+}
+
+.commList table {
+    /*padding:10px;*/
+    width: 900px;
+    margin: auto;
+    /*height:550px;*/
+}
+
+.commList .cTable tr th {
+    font-weight: normal;
+    border-right: 1px solid #DBE3EA;
+    margin-left: 5px;
+}
+
+.commList .cHead {
+    height: 40px;
+    line-height: 40px;
+    background-color: #3086C6;
+}
+
+.commList .cHead span {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 5px;
+}
+
+.commList .cHead img {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.commList .cHead img:hover {
+    cursor: pointer;
+}
+
+.commList .cSearch {
+    padding: 10px;
+    text-align: center;
+}
+
+.commList .cSearch input {
+    width: 400px;
+}
+
+/*当显示不下出现滚动条*/
+.commList .tabContainer {
+    width: 920px;
+    height: 364px;
+    overflow: scroll;
+}
+
+.commList .cTable {
+    margin: 10px;
+    border-collapse: collapse;
+    border: 1px solid #DBE3EA;
+    position: relative;
+}
+
+.commList .cTable tr {
+    line-height: 32px;
+}
+
+.commList .cTable thead {
+    border: 1px solid #DBE3EA;
+    background-color: #F9FBFB;
+}
+
+.commList .cTable input {
+    /*vertical-align:middle;*/
+    margin-left: 10px;
+
+}
+
+.commList .cTable tbody {
+    font-size: 14px;
+}
+
+.commList .cTable tbody tr {
+    border-bottom: 1px dashed gray;
+}
+
+.list .pageTurn{
+    position:fixed;
+    bottom:0px;
+    background-color: #FFF;
+    width:100%;
+
+}
+.commList .pageTurn{
+    text-align: left;
+    margin-top:10px;
+}
+.pageTurn .turn, .commList .pageTurn .detail {
+    display: inline-block;
+}
+
+.pageTurn .turn {
+    float: left;
+    color: red;
+    height:35px;
+}
+
+.pageTurn .detail input {
+    width: 70px;
+    text-align: center;
+}
+.pageTurn .detail input[type=number] {
+    -moz-appearance:textfield;
+}
+.pageTurn .detail input[type=number]::-webkit-inner-spin-button,
+.pageTurn .detail input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pageTurn .detail {
+    float: right;
+    margin-right:18%;
+}
+.pageTurn .detail span{
+    margin:0 5px;
+}
+.pageTurn .detail input{
+    width:70px;
+    border:1px solid gray;
+    border-radius: 3px;
+    margin:-2px 3px 0 3px;
+}
+
+.pageTurn img {
+    width: 16px;
+    vertical-align: middle;
+}
+
+.pageTurn img:hover {
+    cursor: pointer;
+}
+
+.commList .addCom {
+    width: 90px;
+    margin: auto;
+}
+
+.commList .addCom button {
+    background: #3086C6;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+.commList .addCom:hover {
+    cursor: pointer;
+}
+
+/*修改密码*/
+.cover .updateKey{
+    width:450px;
+    height:300px;
+    position:absolute;
+    left:50%;
+    margin-left:-225px;
+    top:50%;
+    margin-top:-225px;
+    background:lightblue;
+    text-align: center;
+    border-radius:5px;
+    display: none;
+}
+.cover .updateKey p label{
+    font-weight:normal;
+}
+.cover .updateKey input{
+    height:32px;
+    padding-left:5px;
+}
+.cover .updateKey p:nth-child(4){
+    position:relative;
+    left:-8px;
+}
+.cover .updateKey button{
+    color: #FFF;
+    height: 32px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background: #3086C6;
+}
+
+
+/*添加快递单号*/
+.addExprNum{
+    width:320px;
+    /*height:40px;*/
+    background:lightblue;
+    position: absolute;
+    left:50%;
+    margin-left:-150px;
+    top:50%;
+    margin-top:-180px;
+    z-index: 999;
+    padding:10px;
+    display: none;
+}
+.addExprNum p{
+    margin: 0 0 1rem 0;
+}
+.addExprNum p input{
+    height:40px;
+    width:240px;
+    margin:0 30px;
+    padding: 0 6px;
+    font-size:18px;
+}
+.addExprNum label{
+    font-weight:normal;
+    font-size:18px;
+}
+.addExprNum p:nth-child(3){
+    text-align: center;
+}
+.addExprNum button{
+    color: #FFF;
+    height: 32px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background: #3086C6;
+}
+
+/*订单详情*/
+.ddxq{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-320px;
+    margin-left:-450px;
+    z-index: 999;
+    display: none;
+}
+.ddxq .detail{
+    padding:20px 40px;
+    font-size:15px;
+}
+.ddxq .detail table .detailBody{
+    width:820px;
+    display: block;
+}
+
+.ddxq .detailBody td:nth-child(1),.ddxq .detailBody td:nth-child(3){
+    width:110px;
+    text-align: right;
+}
+.ddxq .detailBody td:nth-child(2){
+    width:400px;
+}
+
+.ddxq .detailBody tr{
+    height:40px;
+}
+.ddxq .am-modal-dialog{
+    box-shadow: 5px 5px 15px black;
+    margin-left:30px;
+}
+.ddxq .addlist table{
+    margin-left:45px;
+}
+.ddxq .addlist .mb{
+    height:185px;
+    text-align: center;
+}
+.ddxq .addlist  th{
+    width:160px;
+}
+.ddxq .addlist  thead{
+    width:90%;
+}
+.ddxq .addlist  tbody{
+    width:90%;
+}
+.ddxq .addlist td{
+    width:158px;
+}
+
+
+
+/*高级查询*/
+.gjcx label{
+    font-weight:normal;
+    margin-top:10px;
+}
+.gjcx select{
+    height:30px;
+}
+.gjcx input{
+    height:32px;
+    margin-top:10px;
+}
+.gjcx input:last-child{
+    width:200px;
+}

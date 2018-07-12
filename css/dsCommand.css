@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-y: scroll;
+}
+.tbd {
+    width: 1214px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgb(48, 134, 198);
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header>.am-monospace {
+    color: white;
+    font-family: inherit;
+    font-size: 40px;
+    height: 100%;
+    font-weight: 300;
+    float: left;
+}
+
+.nav {
+    float: left;
+    position: relative;
+    top: 31px;
+}
+.nav .order{
+    background:white;
+    color:black;
+}
+.nav .order a{
+    color:#3086C6;
+}
+.nav li {
+    list-style: none;
+    width: 100px;
+    line-height:50px;
+    height: 50px;
+    text-align: center;
+    transform: skewX(-15deg);
+}
+
+.nav li a {
+    color: white;
+    text-align: center;
+}
+
+.nav>ul>li {
+    float: left;
+    margin-right: 15px;
+}
+
+.nav>ul>li:first-child,.nav>ul>li:nth-child(2),.nav>ul>li:nth-child(3) {
+    border-right: 1px solid white;
+}
+
+.subnav {
+    margin: 0;
+    padding-left: 0;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #dedede;
+    margin-top: 3px;
+    display: none;
+}
+
+.subnav li {
+    height: 50%;
+}
+
+.subnav li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subname li:first-child {
+    border-bottom: 1px solid #dedede;
+    padding-top: 3px;
+}
+
+.subnav li a,
+.subname li a {
+    color: #333;
+}
+
+.order:hover .subnav {
+    display: block;
+}
+
+.subnav li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.tx {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    border: 1px solid white;
+    position: relative;
+    top: 20px;
+}
+
+.am-icon-user {
+    color: white;
+    font-size: 30px;
+}
+
+.name {
+    float: right;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top: 13px;
+    right: 45px;
+}
+
+.subname li {
+    list-style: none;
+    height: 34px;
+    line-height: 40px;
+    width: 100px;
+}
+
+.subname {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #dedede;
+    margin-top: 5px;
+    display: none;
+    position: relative;
+    z-index: 999;
+}
+
+.subname li:hover {
+    background-color: rgba(48, 134, 198, 0.3);
+}
+
+.name1 {
+    margin-bottom: 0;
+}
+
+.name1 >li {
+    list-style: none;
+    width: 100px;
+    height:60px;
+}
+
+.name1>li>a {
+    color: white;
+}
+
+.name1>li:hover .subname {
+    display: block;
+}
+
+
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+/*mine*/
+.tbd .yhBody{
+    border:2px solid lightslategray;
+    min-height:500px;
+    margin-bottom:50px;
+}
+.tbd .yhq{
+    margin:40px 0 30px 40px;
+    float:left;
+    width:60%;
+    border:1px solid black;
+    border-radius:8px;
+    padding:10px;
+    min-height:391px;
+}
+.tbd .yhq>p{
+    font-size:18px;
+}
+.tbd .yhBody .yh{
+    /*display: inline-block;*/
+    width:40%;
+    margin:0px 20px;
+    border:1px solid black;
+    border-radius:8px;
+    padding:10px;
+    box-shadow:  3px 3px 12px 1px #888888;
+    float:left;
+}
+
+
+.tbd .yhBody .yh tbody td{
+    width:110px;
+}
+.tbd .yhBody .yh tbody td:first-child{
+    width:25px;
+}
+.tbd .yh input{
+    margin:0;
+    line-height:25px;
+}
+
+
+.tbd .yhBody .gnq{
+    width:30%;
+    /*display: inline-block;*/
+    margin:40px 0 20px 40px;
+    border:1px solid black;
+    border-radius:8px;
+    padding:20px;
+    /*display: none;*/
+    float:left;
+}
+.tbd .yhBody .gnq>p{
+    font-size:18px;
+}
+.tbd .yhBody .gnq .xz{
+    border:1px solid black;
+    border-radius:8px;
+    padding:10px;
+    height:250px;
+    position: relative;
+}
+.tbd .yhBody .gnq .xz .one{
+    margin:8px auto;
+}
+.tbd .yhBody .gnq .xz label{
+    font-weight:normal;
+    margin-left:15px;
+
+}
+.tbd .yhBody .gnq .xz .yhm{
+    /*margin-left:15px;*/
+    letter-spacing: 5px;
+}
+.tbd .yhBody .gnq .xz .mm{
+    letter-spacing:16px;
+}
+.tbd .yhBody .gnq .xz .yhIn{
+    position: relative;
+    left:-3px;
+}
+.tbd .yhBody .gnq .xz .mmIn{
+    position: relative;
+    left:-15px;
+}
+.tbd .yhBody .gnq .xz .xzBtn{
+    background-color:#3086C6;
+    color:white;
+    width:100px;
+    height:35px;
+    border:none;
+    margin-left:50%;
+    left:-50px;
+    position: absolute;
+    margin-top:40px;
+}
+
+.tbd .yhBody .sc{
+    margin-top:20px;
+    clear: both;
+}
+.tbd .yhBody .sc button{
+    background-color:#3086C6;
+    color:white;
+    width:100px;
+    height:35px;
+    border:none;
+}
+
+/*修改密码*/
+.cover {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.cover .updateKey{
+    width:450px;
+    height:300px;
+    position:absolute;
+    left:50%;
+    margin-left:-225px;
+    top:50%;
+    margin-top:-225px;
+    background:lightblue;
+    text-align: center;
+    border-radius:5px;
+    display: none;
+}
+.cover .updateKey p label{
+    font-weight:normal;
+}
+.cover .updateKey input{
+    height:32px;
+    padding-left:5px;
+}
+.cover .updateKey p:nth-child(4){
+    position:relative;
+    left:-8px;
+}
+.cover .updateKey button{
+    color: #FFF;
+    height: 32px;
+    width: 70px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background: #3086C6;
+}

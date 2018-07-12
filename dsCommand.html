@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="css/dsCommand.css">
+    <!--        <link rel="shortcut icon" type="image/png" href="img/xt.png">-->
+    <title>创味江湖</title>
+
+</head>
+
+<body>
+<div class="tbd">
+    <div class="header">
+        <span class="am-monospace">创味江湖</span>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">首页</a></li>
+                <li><a href='order-of-goods.html'>订单管理</a></li>
+                <li><a href='commComand.html'>商品管理</a></li>
+                <li class="order"><a href='javascript:;'>用户管理</a></li>
+            </ul>
+        </div>
+
+        <div class="tx">
+            <span class="am-icon-user"></span>
+        </div>
+        <div class="name">
+            <ul class="name1">
+                <li><a href="#">用户名</a>
+                    <ul class="subname">
+                        <li><a href="#">修改密码</a></li>
+                        <li><a href="index.html">退出登录</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="yhBody">
+        <div class="yhq">
+            <p>用户信息展示区</p>
+            <div>
+                <div class="ds yh">
+                    <p>电商用户</p>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td></td>
+                            <td>用户名</td>
+                            <td>密码</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cj yh">
+                    <p>厂家用户</p>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td></td>
+                            <td>用户名</td>
+                            <td>密码</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="gnq">
+            <p>操作区</p>
+            <div class="xz">
+                <p class="xzyh">新增用户</p>
+                <div class="one"><label class="yhm">用户名：</label><input type="text" class="yhIn"></div>
+                <div class="one"><label class="mm">密码：</label><input type="password" class="mmIn"></div>
+                <div class="one"><label class="qrmm">确认密码：</label><input type="password" class="qrIn"></div>
+                <label>用户类型：</label>
+                <select name="" id="">
+                    <option value="">--请选择--</option>
+                    <option value="1">电商用户</option>
+                    <option value="2">厂家用户</option>
+                </select>
+                <button class="xzBtn">添加</button>
+                <div class="clear"></div>
+            </div>
+            <div class="sc"><button>删除</button></div>
+        </div>
+        <div class="clear" style="clear:both"></div>
+
+    </div>
+</div>
+<!--修改密码-->
+<div class="cover">
+    <!--修改密码-->
+    <div class="updateKey">
+        <h2>修改密码</h2>
+        <p><label>原密码：</label><input type="password" class="ymm"></p>
+        <p><label>新密码：</label><input type="password" class="xmm"></p>
+        <p><label>确认密码：</label><input type="password" class="qrmm"></p>
+        <button class="qr">确认</button>
+        <button class="qx">取消</button>
+    </div>
+
+</div>
+</body>
+<script src="js/00-init.js"></script>
+<script src="js/loadUser.js"></script>
+<script src="js/userMuti.js"></script>
+<script src="js/userCz.js"></script>
+
+</html>
